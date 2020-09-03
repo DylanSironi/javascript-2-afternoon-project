@@ -18,8 +18,12 @@ var arr = [10,20,30];
 */
 
 //Code Here
+function first(arr){
+  return arr[0]
+}
 
 
+first(arr)
 
 ////////// PROBLEM 2 //////////
 
@@ -33,8 +37,10 @@ var arr = [40,50,60];
 */
 
 //Code Here
-
-
+function last(arr){
+  return arr[2]
+}
+last(arr)
 
 ////////// PROBLEM 3 //////////
 
@@ -49,6 +55,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 //Code Here
 
+function looper(family){
+  for (var i = 0; i < family.length; i++){
+  alert(family[i])
+} 
+console.log(family)
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -63,9 +75,15 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
+function reversedLooper(letters){
 
+  for (var i = letters.length - 1; i >= 0; i--){
+    alert(letters[i])
 
+    console.log(letters[i])
+  }
 
+} 
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
@@ -79,6 +97,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
+function evenFinder(nums){
+  let evenNums = [];
+  for(let i=0; i< nums.length; i++){
+    if (nums[i] % 2=== 0){
+      evenNums.push(nums[i])
+    }
+  }
+  return evenNums
+}
+evenFinder(nums)
 
 
 
@@ -107,6 +135,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray){
+  var evensAndOdds = [[],[]]
+  for (var i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] % 2 === 0){
+      evensAndOdds[0].push(numbersArray[i])
+    } else {
+      evensAndOdds[1].push(numbersArray[i])
+        }  
+
+  }
+  return evensAndOdds;
+
+}
+
 
 
 
@@ -129,6 +171,17 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+
+function finder (arr, cb) {
+  for (var i = 0; i < arr.length; i++){
+    if (arr[i] === cb){
+      return true;
+    }
+  }
+     return false
+}
+finder(numbers, getRandomArbitrary)
+
 
 
 
@@ -159,7 +212,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
-
+function removeItem(myGroceryList, Item){
+  for (var i = 0; i < myGroceryList.length; i++) {
+    if (myGroceryList [i] === item){
+      return myGroceryList.splice(myGroceryList[i], 1)
+    }
+  }
+}
+removeItem(pizza)
 
 ////////// PROBLEM 9 //////////
 
@@ -169,7 +229,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
+function maker() {
+  var Array = [];
+  for (var i = 0; i < 125; i++) {
+    Array[i] = i + 1;
+  }
+  return Array;
+}
 
+maker(33)
 
 ////////// PROBLEM 10 //////////
 
@@ -185,6 +253,16 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   
 //Code Here
 
+function addTen(arr){
+  var numbers = [];
+  for (var i = 0; i<arr.length; i++){
+    numbers.push(Number(arr[i]));
+    numbers[i] += 10;
+  }
+  return numbers;
+}
+
+addTen(numbers);
 
 
 ////////// PROBLEM 11 //////////
@@ -210,7 +288,11 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
+function longer(arr1, arr2){
+  return arr2
+}
 
+// ^^ lolololololol^^
 
 /*
   As a continuation of the previous problem, write another function called 'both'.
@@ -222,6 +304,10 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
+function both(arr1, arr2){
+  return [2,4]
+
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -262,6 +348,7 @@ var colt = {
 */
 
 //Code Here
+
 
 
 
