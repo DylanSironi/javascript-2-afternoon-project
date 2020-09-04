@@ -128,12 +128,21 @@ contains(names, 'Colt', function(result){
 
 //Code Here
 
+let testArr  = [1, 1, 2, 3, 5, 5, 3, 6, 7 8]
 
 function uniq(arr,cb){
-  var deDuplicated = arr.filter(function(cur, ind, arr){
-    return arr.indexOf(cur) == ind})
-    cb(deDuplicated)
+  for( let i = 0; i < arr.length; i++){
+    for(let j = i + 1; j < arr.length; j++){
+      i for(arr[i] === arr[J]){
+        arr.splice(j, 1,)
+      }
+    }
+  }
+
+  return arr;
 }
+
+
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
